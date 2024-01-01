@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="framework.css">
+        <title>Ethan Le Sage: Resum&eacute;</title>
+        <link rel="icon" href="svgs/Sigma.svg"/>
+        <script>
+            function getSize() {
+                a = document.getElementsByTagName('HTML')[0].outerHTML;
+                b=(a.length + 1387 + 741 + 7996 + 3521)/1024;
+                c=b.toFixed(2)
+                document.getElementById("pageSize").textContent = c+' kB';
+            }
+            window.onload = getSize;
+        </script>
+    </head>
+    <body class="container">
+        <div class="navbar">
+            <div class="col col-8">
+                <h1 class="title"><a href="index.html">Ethan Le Sage</a></h1>
+                <h3 class="svg-row">
+                    <a target="_blank" href="https://www.linkedin.com/in/lesageethan/"><img class="svg" src="svgs/linkedin.svg"></a> 
+                    <a target="_blank" href="https://www.instagram.com/lesageethan/"><img class="svg" src="svgs/instagram.svg"></a> 
+                    <a target="_blank" href="https://www.kaggle.com/lesageethan"><img class="svg" src="svgs/kaggle.svg"></a> 
+                    <a target="_blank" href="https://github.com/lesageethan"><img class="svg" src="svgs/github.svg"></a> 
+                </h3>
+                <p>
+                    This is an ultra-low-emissions website, inspired by 
+                    <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">Low-Tech Magazine</a>.
+                    This page has a total size of <span id="pageSize"></span>. 
+                    Learn about this site's efficiency <a href="article_about_this_site.html">here</a>.
+                </p>
+                <p class="nav">
+                    <a href="index.html">Home</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a class="active" href="resume.html">Resum&eacute;</a> | 
+                    <a href="projects.html">Projects</a>
+                </p>
+            </div>
+            <div class="col col-2">
+                <img src="profile.png" class="profile">
+            </div>
+        </div>
+
+        <div class="col col-10 hr"></div>
+
+        <div class="col col-10">
+            <h2>Resum&eacute;</h2>
+            <p><a target="_blank" href="/docs/Ethan LeSage CV.pdf">Download a PDF version of this resum&eacute; here.</a></p>
+            <h3>Details</h3>
+            <p>
+                Name: Ethan George William Le Sage<br>
+                Born: 8/10/2001<br>
+                Tel: 07927 174 374<br>
+                Email: lesageethan@gmail.com
+            </p>
+            <h3>Qualifications</h3>
+            <table class="tab">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Cardiff University Computer Science BSc (G400)</td>
+                    <td>First Class Honours</td>
+                </tr>
+                <tr>
+                    <td>HarvardX Data Science Professional Certificate</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Google Cloud Digital Leader</td>
+                    <td>Passing Grade</td>
+                </tr>
+            </table>
+            <h3>Education</h3>
+            <table class="tab">
+                <tr>
+                    <th>School</th>
+                    <th>Ages</th>
+                </tr>
+                <tr>
+                    <td>Cardiff University, Cardiff</td>
+                    <td>Age 18-22</td>
+                </tr>
+                <tr>
+                    <td>King Edward VI Grammar School, Chelmsford</td>
+                    <td>Age 13-18</td>
+                </tr>
+                <tr>
+                    <td>The Cathedral Primary School, Chelmsford</td>
+                    <td>Age 4-12</td>
+                </tr>
+            </table>
+            <h3>Employment</h3>
+            <table class="tab">
+                <tr>
+                    <th>Company</th>
+                    <th>Job Description</th>
+                    <th>Term</th>
+                </tr>
+                <tr>
+                    <td>Deloitte</td>
+                    <td>Digital Risk Consultant specialising in Software Controls. Work including software development, IT audit, and creating client deliverables.</td>
+                    <td>07/09/2023 to date</td>
+                </tr>
+                <tr>
+                    <td>The Pen and Paper Stationery Co.</td>
+                    <td>Position of website manager. Refurbished, maintained, and promoted the company's online store.</td>
+                    <td>21/10/2021 to 25/03/2022</td>
+                </tr>
+                <tr>
+                    <td>Freelance Web Development</td>
+                    <td>Have designed, built and deployed websites for 7 clients from the UK, Canada and Australia.</td>
+                    <td>2018 to 2020</td>
+                </tr>
+                <tr>
+                    <td>Blue Sky Printing</td>
+                    <td>Duties involved printer management, serving customers and cash reconciliation.</td>
+                    <td>13/10/2018 to 14/03/2020</td>
+                </tr>
+                <tr>
+                    <td>RSA Insurance London (Work Experience)</td>
+                    <td>Duties involved working with the IT team, assisting with data entry and assisting with insurance underwriting.</td>
+                    <td>25/6/2018 to 6/7/2018</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </body>
+</html>

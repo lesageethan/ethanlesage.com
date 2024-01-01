@@ -1,0 +1,52 @@
+body {
+    color:#444;
+    font-size:18px;
+    line-height:1.6;
+}
+
+h1,h2,h3 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#039c85;
+}
+
+a:hover {
+    color:#00352d;
+}
+
+.profile {
+    max-width: 100%;
+	margin: 0;
+}
+
+.title {
+    margin-top: 0px;
+    display: inline;
+}
+
+.svg-row {
+    display: inline;
+    float: right;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.svg {
+    height: 1em;
+    filter: invert(37%) sepia(82%) saturate(1251%) hue-rotate(142deg) brightness(91%) contrast(98%);
+}
+
+.svg:hover {
+    filter: invert(16%) sepia(11%) saturate(5129%) hue-rotate(132deg) brightness(94%) contrast(102%);
+}
+
+#pageSize {
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+}

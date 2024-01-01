@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="framework.css">
+        <title>Ethan Le Sage: Homepage</title>
+        <link rel="icon" href="svgs/Sigma.svg"/>
+        <script>
+            function getSize() {
+                a = document.getElementsByTagName('HTML')[0].outerHTML;
+                b=(a.length + 1387 + 741 + 7996 + 3521)/1024;
+                c=b.toFixed(2)
+                document.getElementById("pageSize").textContent = c+' kB';
+            }
+            window.onload = getSize;
+        </script>
+    </head>
+    <body class="container">
+        <div class="navbar">
+            <div class="col col-8">
+                <h1 class="title"><a href="index.html">Ethan Le Sage</a></h1>
+                <h3 class="svg-row">
+                    <a target="_blank" href="https://www.linkedin.com/in/lesageethan/"><img class="svg" src="svgs/linkedin.svg"></a> 
+                    <a target="_blank" href="https://www.instagram.com/lesageethan/"><img class="svg" src="svgs/instagram.svg"></a> 
+                    <a target="_blank" href="https://www.kaggle.com/lesageethan"><img class="svg" src="svgs/kaggle.svg"></a> 
+                    <a target="_blank" href="https://github.com/lesageethan"><img class="svg" src="svgs/github.svg"></a> 
+                </h3>
+                <p>
+                    This is an ultra-low-emissions website, inspired by 
+                    <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">Low-Tech Magazine</a>.
+                    This page has a total size of <span id="pageSize"></span>. 
+                    Learn about this site's efficiency <a href="article_about_this_site.html">here</a>.
+                </p>
+                <p class="nav">
+                    <a class="active" href="index.html">Home</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="resume.html">Resum&eacute;</a> | 
+                    <a href="projects.html">Projects</a>
+                </p>
+            </div>
+            <div class="col col-2">
+                <img src="profile.png" class="profile">
+            </div>
+        </div>
+
+        <div class="col col-10 hr"></div>
+
+        <div class="col col-10">
+            <h2>About Me</h2>
+            <p>
+                As a tech consultant at Deloitte, I am passionate about leveraging cutting-edge technologies to help 
+                clients solve complex business challenges. With a first-class degree in Computer Science and a strong 
+                interest in data, AI, and full-stack development, I bring a unique blend of technical expertise and 
+                business acumen to every project. <br><br>
+
+                I am particularly interested in the intersection of data and technology, and have pursued additional 
+                training and certifications to deepen my knowledge in this area. I am a certified data science 
+                visualization expert through HarvardX, and have also been certified as a Google Cloud Digital Leader. <br><br>
+
+                Whether working on a data-driven project or developing a full-stack application, I am always focused 
+                on delivering the highest level of quality and value to my clients. I am excited to continue growing my 
+                skills and expertise in the tech industry, and look forward to connecting with others who share my 
+                passion for innovation and problem-solving.
+            </p>
+        </div>
+    </body>
+</html>
