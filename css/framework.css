@@ -171,3 +171,24 @@ h1,h2,h3,h4,h5,h6 {
 .hr {
     border-top: 1px solid #444;
 }
+
+/* Tiles */
+
+.tile {
+    margin: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #828282;
+    margin-bottom: 20px;
+}
+
+.tile img {
+    width: 100%;
+}
+
+.tile-body {
+    padding: 20px;
+}
+
+.tile h1, .tile h2, .tile h3, .tile h4, .tile h5, .tile h6 {
+    margin-top: 0;
+}
