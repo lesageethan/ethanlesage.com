@@ -149,8 +149,8 @@ h1,h2,h3,h4,h5,h6 {
 /* Form Blocks */
 
 .form-block {
-    background-color: #f4f4f4;
     padding: 20px;
+    border: 1px solid #828282;
 }
 
 .form-block input, .form-block textarea {
@@ -166,6 +166,10 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 5px;
 }
 
+.form-block fieldset input {
+    width: auto;
+}
+
 /* Horizontal Rule */
 
 .hr {
@@ -176,7 +180,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .tile {
     margin: 10px;
-    background-color: #f4f4f4;
     border: 1px solid #828282;
     margin-bottom: 20px;
 }
@@ -191,4 +194,30 @@ h1,h2,h3,h4,h5,h6 {
 
 .tile h1, .tile h2, .tile h3, .tile h4, .tile h5, .tile h6 {
     margin-top: 0;
+}
+
+/* Hiding for Responsivity */
+
+@media (max-width:540px) {
+    .hide-sm {
+        width: 0px;
+    }
+}
+
+@media (max-width:720px) {
+    .hide-md {
+        width: 0px;
+    }
+}
+
+@media (max-width:960px) {
+    .hide-lg {
+        width: 0px;
+    }
+}
+
+@media (max-width:1140px) {
+    .hide-xl {
+        width: 0px;
+    }
 }
