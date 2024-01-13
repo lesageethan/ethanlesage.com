@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="../css/stylesheet.css">
         <link rel="stylesheet" href="../css/framework.css">
-        <title>Ethan Le Sage: Rust BaseFinder</title>
+        <title>Ethan Le Sage: Final Dissertation</title>
         <link rel="icon" href="../svgs/Sigma.svg"/>
     </head>
     <body class="container">
@@ -37,23 +37,23 @@
         <div class="col col-12 hr"></div>
 
         <div class="col col-12">
-            <h2>Rust BaseFinder</h2>
+            <h2>Predicting Talent Show Winners with Machine Learning</h2>
             <p>
-                <a target="_blank" href="https://rustbasefinder.com">View the site here</a>.
+                <a target="_blank" href="../docs/Ethan LeSage Final Project.pdf">View the entire report here (1,807 KB).</a>
             </p>
             <figure>
-                <img class="headerimage" src="../images/rustbasefinder-map.png">
-                <figcaption class="caption">Above: Map of rustbasefinder.com users over the last 60 days (At time of writing).</figcaption>
+                <img class="headerimage" src="../images/twittergraph.png">
+                <figcaption class="caption">Above: Mean Absolute Error of voting share percentage predictions (by season).</figcaption>
             </figure>
-            
             <p>
-                Rust BaseFinder is a site made in 2020, which serves as a forum to share, compare, and review base designs for a video game called Rust. 
-                Since its inception it has received over <b>1 million</b> pageviews, <b>200 thousand</b> users, and <b>2 thousand</b> signups.</b> <br><br>
-                The site was built from the ground-up by me, using Django for the backend, SQLite for the database, and HTML, CSS and Bootstrap for the frontend. 
-                As a result, the site is relatively lightweight (before Google covers it in Adsense and Analytics scripts), and can be ran on a bottom-of-the-range DigitalOcean droplet.<br><br>
-                Despite having very few updates in the 3+ years that it has existed, it still maintains consistent viewership at around 200 users per day. 
-                It has been very useful as a method to test various coding ideas, as the consistent viewership allows me to test the effectiveness of my ideas.
-
+                For the final dissertation in my Computer Science BSc, my aim was to build a machine learning model capable of predicting the winners of I'm a Celebrity. 
+                It would do this using sentiment analysis on a large bank of tweets, and then by performing regression techniques on the results of sentiment analysis.<br><br>
+                As part of this project, I developed a couple of novel techniques applicable to this specific problem set. 
+                One involved the creation of additonal training data with theoretical three-way votes that never actually occurred. 
+                The other was the usage of output post-normalisation, which enabled the use of three separate predictions to be used in tandem to generate one prediction for a three-way-vote. <br><br>
+                The ideas explored in the months of model development are far too complex to express here 
+                (in fact they were difficult to express in a 50-page report!), 
+                so if you want to learn more please download the whole report with the link at the top of this page.
             </p>
     </body>
 </html>

@@ -221,3 +221,10 @@ h1,h2,h3,h4,h5,h6 {
         width: 0px;
     }
 }
+
+/* Captions */
+
+.caption {
+    font-size: 0.9em;
+    text-align: center;
+}
