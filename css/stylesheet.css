@@ -43,6 +43,10 @@ a:hover {
     filter: invert(16%) sepia(11%) saturate(5129%) hue-rotate(132deg) brightness(94%) contrast(102%);
 }
 
+.navbar {
+    margin-top: 20px;
+}
+
 #pageSize {
     font-weight: bold;
 }
