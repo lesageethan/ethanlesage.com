@@ -72,7 +72,7 @@
     }
 }
 
-@media (max-width:1140px) {
+@media (max-width:1100px) {
     .lapse-xl {
         width: 100%;
     }
@@ -142,7 +142,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .container { 
     margin:0px auto;
-    max-width:800px;
+    max-width:900px;
     padding:0 10px;
 }
 
@@ -157,6 +157,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     font-family: inherit;
     font-size: inherit;
+    box-sizing: border-box;
 }
 
 .form-block button {
@@ -164,6 +165,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 8px 16px;
     border: 1px solid #444;
     border-radius: 5px;
+    color: #444;
 }
 
 .form-block fieldset input {
@@ -216,7 +218,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-@media (max-width:1140px) {
+@media (max-width:1100px) {
     .hide-xl {
         width: 0px;
     }
