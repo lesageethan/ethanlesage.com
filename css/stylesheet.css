@@ -64,8 +64,8 @@ a:hover {
 }
 
 .headerimage {
-    max-width: 600px;
-    max-height: 300px;
+    width: 100%;
+    max-height: 400px;
     margin: 0 auto;
     display: block;
 }
