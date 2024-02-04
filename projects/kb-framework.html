@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="stylesheet" href="../css/framework.css">
+        <title>Ethan Le Sage: KB Framework</title>
+        <link rel="icon" href="../svgs/Sigma.svg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="container">
+        <div class="navbar">
+            <div class="col col-9 lapse-sm">
+                <h1 class="title"><a href="../index.html">Ethan Le Sage</a></h1>
+                <h3 class="svg-row">
+                    <a target="_blank" href="https://www.linkedin.com/in/lesageethan/"><img class="svg" src="../svgs/linkedin.svg"></a> 
+                    <a target="_blank" href="https://www.instagram.com/lesageethan/"><img class="svg" src="../svgs/instagram.svg"></a> 
+                    <a target="_blank" href="https://www.kaggle.com/lesageethan"><img class="svg" src="../svgs/kaggle.svg"></a> 
+                    <a target="_blank" href="https://github.com/lesageethan"><img class="svg" src="../svgs/github.svg"></a> 
+                </h3>
+                <p>
+                    This is an ultra-low-emissions website, inspired by 
+                    <a target="_blank" href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">Low-Tech Magazine</a>.
+                    This page has a total size of <span id="pageSize"></span>. 
+                    Learn about this site's efficiency <a href="projects/site-efficiency.html">here</a>.
+                </p>
+                <p>
+                    <a href="../index.html">Home</a> |
+                    <a href="../contact.html">Contact</a> |
+                    <a href="../resume.html">Resum&eacute;</a> | 
+                    <a href="../projects.html">Projects</a> | 
+                    <a href="../websites.html">Website Portfolio</a>
+                </p>
+            </div>
+            <div class="col col-3 lapse-sm">
+                <img src="../images/profile.png" class="profile hide-sm">
+            </div>
+        </div>
+
+        <div class="col col-12 hr"></div>
+
+        <div class="col col-12">
+            <h2>KB Framework</h2>
+            <p>
+                KB Framework is an ultra-low-emissions CSS framework, coming in at just <b>996 bytes</b> when minified and gzipped.
+                It is also the framework that powers this website.
+            </p>
+            <h3>Components</h3>
+            <p>
+                KB Framework comes with a fairly wide range of CSS components, however much less than any other CSS frameworks available on the web. 
+                The current list of components crammed into one kilobyte is as follows:
+            </p>
+            <ul>
+                <li>A responsive 12-wide column system</li>
+                <li>A responsive container for mobile-first design</li>
+                <li>A (very basic) navbar</li>
+                <li>Pre-formatted tables</li>
+                <li>Heading sizing</li>
+                <li>Code blocks</li>
+                <li>Form blocks</li>
+                <li>Tiles</li>
+                <li>Responsive element-hiding tags</li>
+                <li>Pre-formatted captions</li>
+            </ul>
+            <h3>Usage</h3>
+            <p>
+                Below you can see a breakdown of each the components, what they do, and how they are used.
+            </p>
+            <h4>Breakpoints</h4>
+            <p>
+                The responsivity breakpoints included in this framework are almost identical to Bootstrap.
+                Before reading on, it is important to know what the responsive breakpoints included with this framework are:
+            </p>
+            <table class="tab">
+                <tr>
+                    <th>Size Name</th>
+                    <th>Declaration Name</th>
+                    <th>Device Screen Width</th>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>sm</td>
+                    <td>540px</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>md</td>
+                    <td>720px</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>lg</td>
+                    <td>960px</td>
+                </tr>
+                <tr>
+                    <td>Extra Large</td>
+                    <td>xl</td>
+                    <td>1100px</td>
+                </tr>
+            </table>
+            <p>
+                These breakpoints are used for the responsive columns system, and also for hiding elements.
+            </p>
+            <h4>Responsive Columns</h4>
+            <p>
+                The columns included in this framework are very similar to Bootstrap, and most other CSS frameworks on the market.
+                See the example below for how they are used:
+            </p>
+
+            <pre class="code">
+&lt;div class="col col-4 lapse-sm" style="background-color: red;">
+    col-4
+&lt;/div>
+&lt;div class="col col-3 lapse-sm" style="background-color: blue;">
+    col-3
+&lt;/div>
+&lt;div class="col col-5 lapse-sm" style="background-color: green;">
+    col-5
+&lt;/div> </pre>
+
+            <p>
+                In the above code, we use the class 'col' to declare a column, followed by 'col-4' to declare the width as 4. 
+                'lapse-sm' tells the framework to collapse the columns at the 'sm' breakpoint for responsivity on mobile.
+                The outcome of this code can be seen below:
+            </p>
+            
+            <div class="col col-4 lapse-sm" style="background-color: red;">
+                col-4
+            </div>
+            <div class="col col-3 lapse-sm" style="background-color: blue;">
+                col-3
+            </div>
+            <div class="col col-5 lapse-sm" style="background-color: green;">
+                col-5
+            </div>
+            <br>
+            <h4>Responsive Container</h4>
+            <p>
+                For mobile-first development, and for creating a central column on desktop web pages, the responsive container element can be used as follows:
+            </p>
+            <pre class="code">
+&lt;div class="container">
+    Put your column content here
+&lt;/div></pre>
+            <p>
+                These containers have a max-width of 700px. 
+                A good example of this is the page you are currently viewing. 
+                All of the content you see is inside of one of these containers. 
+                In fact, on this site, the container class has been added directly to the body element.
+            </p>
+            <h4>A (Very Basic) Navbar</h4>
+            <p>
+                Inside the KB I have managed to include a navbar system, but be warned, it is extremely basic.
+            </p>
+<pre class="code">
+&lt;div class="nav" style="background-color: lightcoral;">
+    &lt;ul>
+        &lt;li class="nav-left">Site Header&lt;/li>
+        &lt;li class="nav-right">Link-1&lt;/li>
+        &lt;li class="nav-right">Link-2&lt;/li>
+    &lt;/ul>
+&lt;/div>
+</pre>
+            <p>
+                By adding a div with the class "nav", you instantiate a navbar. 
+                Inside of this div, we use an unordered list to contain all headers and links. 
+                The list items are used as headers and links. 
+                The classes nav-left and nav-right define which direction each of the items should float in the navbar. 
+            </p>
+            <p>
+                To create a sticky navbar, add the class 'sticky' to the navbar div. 
+                The navbar will now stick to the top of the page even after scrolling. 
+                I won't show an example of this here, so as not to break the page. 
+            </p>
+            <div class="nav" style="background-color: lightcoral;">
+                <ul>
+                    <li class="nav-left">Site Header</li>
+                    <li class="nav-right">Link-1</li>
+                    <li class="nav-right">Link-2</li>
+                </ul>
+            </div>
+            <h4>Pre-Formatted Tables</h4>
+            <p>
+                With the addition of just one classname, your tables can go from the default HTML style to looking quite nice:
+            </p>
+<pre class="code">
+&lt;table class=&quot;tab&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Height&lt;/th&gt;
+        &lt;th&gt;Eye Color&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eric Idle&lt;/td&gt;
+        &lt;td&gt;5ft 11&lt;/td&gt;
+        &lt;td&gt;Blue&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Graham Chapman&lt;/td&gt;
+        &lt;td&gt;6ft 3&lt;/td&gt;
+        &lt;td&gt;Blue&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Cleese&lt;/td&gt;
+        &lt;td&gt;6ft 5&lt;/td&gt;
+        &lt;td&gt;Hazel&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+            <p>
+                The formatted tables include; Bold and centered headings, alternating shading, and internal gridlines.
+            </p>
+            <table class="tab">
+                <tr>
+                    <th>Name</th>
+                    <th>Height</th>
+                    <th>Eye Color</th>
+                </tr>
+                <tr>
+                    <td>Eric Idle</td>
+                    <td>5ft 11</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>Graham Chapman</td>
+                    <td>6ft 3</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>John Cleese</td>
+                    <td>6ft 5</td>
+                    <td>Hazel</td>
+                </tr>
+            </table>
+            <h4>Heading Sizing</h4>
+            <p>
+                By default, headings have amended line-height of 1.2. 
+                No classnames are needed for this to take effect. 
+            </p>
+            <h4>Code Blocks</h4>
+            <p>
+                As can be seen all over this page, code blocks are included, and can be defined like so:
+            </p>
+<pre class="code">
+&lt;pre class=&quot;code&quot;&gt;
+    Insert code here
+&lt;/pre&gt;
+</pre>
+            <p>
+                They will look (you guessed it) like the code blocks on this page. 
+            </p>
+            <h4>Form Blocks</h4>
+            <p>
+                Basic formatting is included for the various input elements in HTML forms. 
+                I won't include an example of all of them here, but some can be seen below:
+            </p>
+<pre class="code">
+&lt;form class=&quot;form-block&quot;&gt;
+    &lt;label&gt;Your Email: &lt;/label&gt; &lt;br&gt;
+    &lt;input placeholder=&quot;example@gmail.com&quot;&gt; &lt;br&gt;
+    &lt;label&gt;What do you think of KB Framework?&lt;/label&gt;
+    &lt;fieldset&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rating&quot;&gt;
+        &lt;label&gt;Great!&lt;/label&gt; &lt;br&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rating&quot;&gt;
+        &lt;label&gt;Meh&lt;/label&gt; &lt;br&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;rating&quot;&gt;
+        &lt;label&gt;Rubbish&lt;/label&gt; &lt;br&gt;
+    &lt;/fieldset&gt;
+    &lt;label&gt;Further Feedback: &lt;/label&gt; &lt;br&gt;
+    &lt;textarea type=&quot;textarea&quot;&gt;&lt;/textarea&gt; &lt;br&gt;
+    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+        <p>
+            The built-in styling for forms is <b>very minimal</b>, on the assumption that most users of the framework will want to custom-style their forms anyway.
+        </p>
+        <p>
+            By default, all input elements will expand to 100% of the form-block's width. 
+            If you want to escape this (e.g. for radio buttons), you can contain the inputs within a fieldset.
+        </p>
+            <form class="form-block">
+                <label>Your Email: </label> <br>
+                <input placeholder="example@gmail.com"> <br>
+                <label>What do you think of KB Framework?</label>
+                <fieldset>
+                    <input type="radio" name="rating">
+                    <label>Great!</label> <br>
+                    <input type="radio" name="rating">
+                    <label>Meh</label> <br>
+                    <input type="radio" name="rating">
+                    <label>Rubbish</label> <br>
+                </fieldset>
+                <label>Further Feedback: </label> <br>
+                <textarea type="textarea"></textarea> <br>
+                <button type="submit">Submit</button>
+            </form>
+            <h4>Tiles</h4>
+            <p>
+                A slightly more snazzy element included in this framework is the tile. 
+                These are styled like cards, with an image included at the top, and custom heading styling. 
+                All other types of content (excluding navbars) can be included within a tile. 
+            </p>
+<pre class="code">
+&lt;div class=&quot;tile&quot; style=&quot;max-width: 300px;&quot;&gt;
+    &lt;img src=&quot;../images/rustbasefinder.png&quot;&gt;
+    &lt;div class=&quot;tile-body&quot;&gt;
+        &lt;h2&gt;Example Heading&lt;/h2&gt;
+        &lt;p&gt;Some text&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <p>
+                These tiles work best when included within the responsive columns provided by this framework. 
+                For this example, I have assigned a max-width of 300px as a demonstration, because they look stupid at full-width.
+            </p>
+            <div class="tile" style="max-width: 300px;">
+                <img src="../images/rustbasefinder.png">
+                <div class="tile-body">
+                    <h2>Example Heading</h2>
+                    <p>Some text</p>
+                </div>
+            </div>
+    </body>
+</html>
