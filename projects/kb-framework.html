@@ -20,8 +20,8 @@
                 <p>
                     This is an ultra-low-emissions website, inspired by 
                     <a target="_blank" href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">Low-Tech Magazine</a>.
-                    This page has a total size of <span id="pageSize"></span>. 
-                    Learn about this site's efficiency <a href="projects/site-efficiency.html">here</a>.
+                    This page has a total size of <b>~12KB</b>. 
+                    Learn about this site's efficiency <a href="site-efficiency.html">here</a>.
                 </p>
                 <p>
                     <a href="../index.html">Home</a> |
@@ -44,22 +44,30 @@
                 KB Framework is an ultra-low-emissions CSS framework, coming in at just <b>996 bytes</b> when minified and gzipped.
                 It is also the framework that powers this website.
             </p>
+            <p>
+                It is important to note that this framework will need to be used in conjunction with custom CSS rules, as it is only intended to offer an incredibly lightweight skeleton for a web page.  
+            </p>
+            <p>
+                Also worth noting, this was developed in just a few weeks by one person (me), and so is not perfect. 
+                There may be small issues with padding or margins when certain elements are placed together on a page, but any of these issues can easily be corrected with CSS.
+            </p>
             <h3>Components</h3>
             <p>
                 KB Framework comes with a fairly wide range of CSS components, however much less than any other CSS frameworks available on the web. 
                 The current list of components crammed into one kilobyte is as follows:
             </p>
             <ul>
-                <li>A responsive 12-wide column system</li>
-                <li>A responsive container for mobile-first design</li>
-                <li>A (very basic) navbar</li>
-                <li>Pre-formatted tables</li>
-                <li>Heading sizing</li>
-                <li>Code blocks</li>
-                <li>Form blocks</li>
-                <li>Tiles</li>
-                <li>Responsive element-hiding tags</li>
-                <li>Pre-formatted captions</li>
+                <li><a href="#columns">Responsive 12-wide column system</a></li>
+                <li><a href="#container">Responsive container for mobile-first design</a></li>
+                <li><a href="#navbar">Navbar (very basic)</a></li>
+                <li><a href="#tables">Pre-formatted tables</a></li>
+                <li><a href="#headings">Heading sizing</a></li>
+                <li><a href="#code">Code blocks</a></li>
+                <li><a href="#forms">Form blocks</a></li>
+                <li><a href="#tiles">Tiles</a></li>
+                <li><a href="#hiding">Responsive element-hiding tags</a></li>
+                <li><a href="#captions">Pre-formatted captions</a></li>
+                <li><a href="#horizontal">Horizontal rules</a></li>
             </ul>
             <h3>Usage</h3>
             <p>
@@ -100,7 +108,7 @@
             <p>
                 These breakpoints are used for the responsive columns system, and also for hiding elements.
             </p>
-            <h4>Responsive Columns</h4>
+            <h4 id="columns">Responsive Columns</h4>
             <p>
                 The columns included in this framework are very similar to Bootstrap, and most other CSS frameworks on the market.
                 See the example below for how they are used:
@@ -133,7 +141,7 @@
                 col-5
             </div>
             <br>
-            <h4>Responsive Container</h4>
+            <h4 id="container">Responsive Container</h4>
             <p>
                 For mobile-first development, and for creating a central column on desktop web pages, the responsive container element can be used as follows:
             </p>
@@ -147,7 +155,7 @@
                 All of the content you see is inside of one of these containers. 
                 In fact, on this site, the container class has been added directly to the body element.
             </p>
-            <h4>A (Very Basic) Navbar</h4>
+            <h4 id="navbar">A (Very Basic) Navbar</h4>
             <p>
                 Inside the KB I have managed to include a navbar system, but be warned, it is extremely basic.
             </p>
@@ -178,7 +186,7 @@
                     <li class="nav-right">Link-2</li>
                 </ul>
             </div>
-            <h4>Pre-Formatted Tables</h4>
+            <h4 id="tables">Pre-Formatted Tables</h4>
             <p>
                 With the addition of just one classname, your tables can go from the default HTML style to looking quite nice:
             </p>
@@ -231,12 +239,12 @@
                     <td>Hazel</td>
                 </tr>
             </table>
-            <h4>Heading Sizing</h4>
+            <h4 id="headings">Heading Sizing</h4>
             <p>
                 By default, headings have amended line-height of 1.2. 
                 No classnames are needed for this to take effect. 
             </p>
-            <h4>Code Blocks</h4>
+            <h4 id="code">Code Blocks</h4>
             <p>
                 As can be seen all over this page, code blocks are included, and can be defined like so:
             </p>
@@ -248,7 +256,7 @@
             <p>
                 They will look (you guessed it) like the code blocks on this page. 
             </p>
-            <h4>Form Blocks</h4>
+            <h4 id="forms">Form Blocks</h4>
             <p>
                 Basic formatting is included for the various input elements in HTML forms. 
                 I won't include an example of all of them here, but some can be seen below:
@@ -294,7 +302,7 @@
                 <textarea type="textarea"></textarea> <br>
                 <button type="submit">Submit</button>
             </form>
-            <h4>Tiles</h4>
+            <h4 id="tiles">Tiles</h4>
             <p>
                 A slightly more snazzy element included in this framework is the tile. 
                 These are styled like cards, with an image included at the top, and custom heading styling. 
@@ -320,5 +328,27 @@
                     <p>Some text</p>
                 </div>
             </div>
+            <h4 id="hiding">Responsive Element Hiding</h4>
+            <p>
+                By adding the classname hide-sm, hide-md, hide-lg, or hide-xl to any element, the element will cease to be shown after the corresponding breakpoint is hit.
+            </p>
+            <h4 id="captions">Captions</h4>
+            <p>
+                Image captions are sized to 0.9em automatically, and centered.
+            </p>
+            <h4 id="horizontal">Horizontal Rules</h4>
+            <p>
+                Because html hr elements can be a bit weird sometimes, I have included a proprietary horizontal rule class. 
+                By adding the class hr to an empty div, it will render as a horizontal rule. 
+                This can be combined with the columns system to create horizontal rules of any width from 1 to 12.
+<pre class="code">
+&lt;div class=&quot;col col-12 hr&quot;&gt;&lt;/div&gt;
+</pre>
+                <p>
+                    This renders like so:
+                </p>
+                <div class="col col-12 hr"></div>
+                <br>
+            </p>
     </body>
 </html>
